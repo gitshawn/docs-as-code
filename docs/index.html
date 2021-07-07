@@ -11,8 +11,12 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      loadSidebar: true,
       search: {
         placeholder: 'Type to search'
+      },
+      plantuml: {
+        skin: 'default',
       }
     }
   </script>
@@ -22,16 +26,9 @@
   <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
   <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js">
   <script>mermaid.initialize({ startOnLoad: true });</script>
-
-<!-- PlantUML plugin -->   
-<script>
-window.$docsify = {
-  plantuml: {
-    skin: 'default',
-  },
-}
-</script>
+<!-- PlantUML plugin -->
 <script src="//unpkg.com/docsify-puml/dist/docsify-puml.min.js"></script>
+<!-- Search plugin -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
