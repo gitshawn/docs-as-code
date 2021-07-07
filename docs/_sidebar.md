@@ -1,6 +1,5 @@
-- Getting started
+- [Homepage](_home.md)
+- Other things 'as-Code'
 
-  - [Quick start](quickstart.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
-  - [Cover page](cover.md)
+  - [Graphs](graphs-as-code.md)
+  - [Presentations](presentations-as-code.md)
