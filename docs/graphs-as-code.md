@@ -23,18 +23,18 @@ graph TD
     C -->|Three| F[fa:fa-car Car]
 ```
 
-The code looks like this:
+In 'Docs-as-Code' markdown, that code looks like this:
 
-```
-\```mermaid
+````markdown
+```mermaid
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
     B --> C{Let me think}
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
-\```
 ```
+````
 
 A good place to develop your Mermaid code is: https://mermaid-js.github.io/mermaid-live-editor/
 
@@ -53,9 +53,9 @@ Alice <-- Bob: another authentication Response
 @enduml
 ```
 
-That code looks like this:
-```
-\```plantuml
+In 'Docs-as-Code' markdown, that code looks like this:
+````
+```plantuml
 @startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
@@ -63,5 +63,5 @@ Bob --> Alice: Authentication Response
 Alice -> Bob: Another authentication Request
 Alice <-- Bob: another authentication Response
 @enduml
-\```
 ```
+````
