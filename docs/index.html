@@ -12,6 +12,11 @@
   <script>
     window.$docsify = {
       loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,
       homepage: '_home.md',
       search: {
         placeholder: 'Type to search'
@@ -19,7 +24,7 @@
       plantuml: {
         skin: 'default',
       }
-    }
+  }
   </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/docsify.min.js">
 
