@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/themes/buble.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <!-- Collapse sidebar plugin 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 -->
@@ -32,27 +34,16 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/docsify.min.js">
 <!-- Mermaid plugin --> 
 // Import mermaid
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
-<script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-var num = 0;
-mermaid.initialize({ startOnLoad: false });
+    <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+    <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        securityLevel: 'loose',
+        logLevel: 1
+      });
+    </script>
 
-window.$docsify = {
-  markdown: {
-    renderer: {
-      code: function(code, lang) {
-        if (lang === "mermaid") {
-          return (
-            '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-          );
-        }
-        return this.origin.code.apply(this, arguments);
-      }
-    }
-  }
-}
-</script>
 <!-- PlantUML plugin -->
 <script src="//unpkg.com/docsify-puml/dist/docsify-puml.min.js"></script>
 <!-- Search plugin -->
