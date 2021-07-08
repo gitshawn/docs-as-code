@@ -23,6 +23,7 @@ graph TD
 ```
 
 The code looks like this:
+
 ```
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
@@ -32,4 +33,17 @@ graph TD
     C -->|Three| F[fa:fa-car Car]
 ```
 
-A good place to learn and test your Mermaid code is: https://mermaid-js.github.io/mermaid-live-editor/
+A good place to develop your Mermaid code is: https://mermaid-js.github.io/mermaid-live-editor/
+
+## PlantUML
+
+```plantuml
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
+```
+
