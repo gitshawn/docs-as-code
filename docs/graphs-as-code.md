@@ -20,7 +20,7 @@ graph TD
     B --> C{Let me think}
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
-    C -->|Three| F[:car: Car]
+    C -->|Three| F[Car]
 ```
 
 In 'Docs-as-Code' markdown, that code looks like this:
@@ -32,7 +32,7 @@ graph TD
     B --> C{Let me think}
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
+    C -->|Three| F[Car]
 ```
 ````
 
