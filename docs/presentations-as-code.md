@@ -4,4 +4,4 @@
 There are multiple presentation libraries that fit our client-side, no-build, code first approach.
 
 ### Reveal.js
-[Presentation Here](presentations/reveal.md)
+[Presentation Here](presentations/reveal.html)
